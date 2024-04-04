@@ -11,7 +11,9 @@
     />
     
     <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-e2059247.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-03da8548.js">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-a51daae5.css">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-5ddeadbf.css">
   </head>
   <body>
     <form class="form">
@@ -19,9 +21,17 @@
       <button type="submit" class="search-button">Search</button>
     </form>
 
+    <ul class="gallery"></ul>
+    <button type="button" class="load-more-btn">Load more</button>
     <div class="loader"></div>
 
-    <ul class="gallery"></ul>
+    <button class="scroll-to-top" type="button">
+      <svg width="24" height="24" class="icon">
+        <use href="./img/icons/symbol-defs.svg#icon-arrow-circle-up"></use>
+      </svg>
+    </button>
+
+    <script src="https://pixabay.com/api/docs/"></script>
     
   </body>
 </html>

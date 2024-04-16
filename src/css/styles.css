@@ -9,8 +9,23 @@
 @import url('./loader.css');
 
 body {
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 0.04em;
   color: #2e2f42;
+}
+
+h3 {
+  margin-top: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #2e2f42;
+}
+
+p {
+font-weight: 400;
+font-size: 12px;
+line-height: 2;
 }
 
 .form {
@@ -25,12 +40,9 @@ body {
   width: 272px;
   height: 40px;
   border-radius: 8px;
-
-  padding-left: 12px;
-  font: 400 16px / 1.5 'Montserrat', sans-serif;
-  color: #808080;
   border: 1px solid #808080;
   outline: transparent;
+  padding-left: 12px;
 }
 
 .search-input:hover {
@@ -47,7 +59,6 @@ body {
   padding: 8px 16px;
   width: 91px;
   height: 40px;
-  font: 500 16px / 1.5 'Montserrat', sans-serif;
   color: #fff;
   display: flex;
   align-items: center;
@@ -71,17 +82,16 @@ body {
 }
 
 .card {
-  border: 1px solid #808080;
   width: 360px;
-  height: 200px;
   display: flex;
   flex-direction: column;
+  border: 1px solid #808080;
 }
 
 .card img {
   width: 360px;
-  object-fit: cover;
   height: 152px;
+  object-fit: cover;
 }
 
 .list-container {
@@ -107,35 +117,26 @@ body {
   flex-direction: column;
 }
 
-h3 {
-  margin-top: 4px;
-  font: 600 12px / 1.33333 'Montserrat', sans-serif;
-}
-
-p {
-  font: 400 12px / 2 'Montserrat', sans-serif;
-}
-
 .load-more-btn {
-  background: #4e75ff;
-  border-radius: 8px;
   width: 125px;
   height: 40px;
+  background: #4e75ff;
+  color: #fff;
+  border-radius: 8px;
   display: none;
   justify-content: center;
   align-items: center;
   border: none;
-  font: 500 16px / 1.5 'Montserrat', sans-serif;
-  color: #fff;
+  font-weight: 500;
   margin: 40px auto;
 }
 
-.end-message {
+.result-message {
   display: flex;
-  align-items: center;
   justify-content: center;
-  font: 400 16px / 1.5 'Montserrat', sans-serif;
-  color: #2e2f42;
   margin: 40px auto;
-  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }

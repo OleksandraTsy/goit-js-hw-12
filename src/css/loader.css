@@ -1,29 +1,18 @@
 .loader {
-    border: 4px double #d2ecaa;
-    border-radius: 50%;
-    border-top: 4px solid #38db69;
+    display: block;
     width: 50px;
     height: 50px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+    border-radius: 50%;
+    border: 6px double #c76767;
+    border-top: 6px solid #990303;
+    animation: rotation 4s linear infinite;
     position: absolute;
     top: 80px;
     left: 50%;
-    transform: translateX(-50%);
-    display: block;
+    transform: translateX(-50%);   
 }
 
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
+@keyframes rotation {
     0% {
         transform: rotate(0deg);
     }
@@ -33,29 +22,16 @@
     }
 }
 
+@keyframes rotationBack {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
 .hidden {
-    display: none;
-}
-
-.scroll-to-top {
-    background: #4e75ff;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 50%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 400ms;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
-
-.scroll-to-top:hover {
-    background: #6c8cff;
-}
-
-.icon {
-    fill: #ffffff;
+display: none;
 }
